@@ -22,13 +22,13 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 6,
+  "id": 3,
   "links": [],
   "liveNow": false,
   "panels": [
     {
-      "datasource": "InfluxDB",
-      "description": "Valor limite diario (promedio): 50ug/m3 | \nValor límite anual (promedio): 40ug/m3",
+      "datasource": null,
+      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -37,8 +37,8 @@
           "custom": {
             "axisLabel": "",
             "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "bars",
+            "barAlignment": -1,
+            "drawStyle": "line",
             "fillOpacity": 10,
             "gradientMode": "none",
             "hideFrom": {
@@ -92,7 +92,7 @@
       },
       "hideTimeOverride": false,
       "id": 6,
-      "interval": "1d",
+      "interval": "7d",
       "links": [],
       "options": {
         "legend": {
@@ -132,7 +132,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "weekly",
+          "measurement": "preprocessed",
           "orderByTime": "ASC",
           "policy": "autogen",
           "refId": "A",
@@ -160,14 +160,14 @@
           "tags": []
         }
       ],
-      "timeFrom": "1h",
+      "timeFrom": "7d",
       "timeShift": "1h",
       "title": "PM1_0",
       "type": "timeseries"
     },
     {
-      "datasource": "InfluxDB",
-      "description": "Valor limite diario (promedio): 50ug/m3 | \nValor límite anual (promedio): 40ug/m3",
+      "datasource": null,
+      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -176,8 +176,8 @@
           "custom": {
             "axisLabel": "",
             "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "bars",
+            "barAlignment": -1,
+            "drawStyle": "line",
             "fillOpacity": 10,
             "gradientMode": "none",
             "hideFrom": {
@@ -231,7 +231,7 @@
       },
       "hideTimeOverride": false,
       "id": 7,
-      "interval": "1d",
+      "interval": "7d",
       "links": [],
       "options": {
         "legend": {
@@ -271,7 +271,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "weekly",
+          "measurement": "preprocessed",
           "orderByTime": "ASC",
           "policy": "autogen",
           "refId": "A",
@@ -299,7 +299,7 @@
           "tags": []
         }
       ],
-      "timeFrom": "1h",
+      "timeFrom": "7d",
       "timeShift": "1h",
       "title": "PM2_5",
       "type": "timeseries"
@@ -320,5 +320,5 @@
   "timezone": "",
   "title": "weekly",
   "uid": "xmypIKpnz",
-  "version": 4
+  "version": 1
 }
