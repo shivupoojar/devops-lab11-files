@@ -22,13 +22,13 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 4,
+  "id": 2,
   "links": [],
   "liveNow": false,
   "panels": [
     {
-      "datasource": "InfluxDB",
-      "description": "Valor limite diario (promedio): 50ug/m3 | \nValor límite anual (promedio): 40ug/m3",
+      "datasource": null,
+      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -132,7 +132,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "hourly",
+          "measurement": "preprocessed",
           "orderByTime": "ASC",
           "policy": "autogen",
           "refId": "A",
@@ -166,8 +166,8 @@
       "type": "timeseries"
     },
     {
-      "datasource": "InfluxDB",
-      "description": "Valor limite diario (promedio): 50ug/m3 | \nValor límite anual (promedio): 40ug/m3",
+      "datasource": null,
+      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -271,7 +271,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "hourly",
+          "measurement": "preprocessed",
           "orderByTime": "ASC",
           "policy": "autogen",
           "refId": "A",
@@ -459,5 +459,5 @@
   "timezone": "",
   "title": "hourly",
   "uid": "v53aMKtnz",
-  "version": 8
+  "version": 1
 }
