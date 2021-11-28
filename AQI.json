@@ -22,7 +22,7 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 5,
+  "id": 1,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -142,7 +142,7 @@
             {
               "key": "host",
               "operator": "=",
-              "value": "00000000c37f0aa8"
+              "value": "0000000029c36345"
             }
           ]
         },
@@ -191,7 +191,56 @@
             {
               "key": "host",
               "operator": "=",
-              "value": "00000000d4bc37f2"
+              "value": "000000008f525c6e"
+            }
+          ]
+        },
+        {
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "host"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "previous"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "measurement": "AQI",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "C",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "AQI"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=",
+              "value": "00000000d5ddcf9f"
             }
           ]
         }
@@ -315,7 +364,7 @@
             {
               "key": "host",
               "operator": "=",
-              "value": "00000000c37f0aa8"
+              "value": "0000000029c36345"
             }
           ]
         },
@@ -364,7 +413,56 @@
             {
               "key": "host",
               "operator": "=",
-              "value": "00000000d4bc37f2"
+              "value": "000000008f525c6e"
+            }
+          ]
+        },
+        {
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "host"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "previous"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "measurement": "AQI",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "C",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "AQI"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=",
+              "value": "00000000d5ddcf9f"
             }
           ]
         }
@@ -388,5 +486,5 @@
   "timezone": "",
   "title": "AQI",
   "uid": "ouKAT5pnz",
-  "version": 6
+  "version": 1
 }
